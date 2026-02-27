@@ -1,9 +1,14 @@
-Listen 8000
+pipeline {
+    agent any
 
-<VirtualHost *:8000>
-    DocumentRoot /var/www/site2
-    <Directory /var/www/site2>
-        AllowOverride All
-        Require all granted
-    </Directory>
-</VirtualHost>
+    stages {
+        stage('Deploy') {
+            steps {
+                sh '''
+                sudo rm -rf /var/www/site2/*
+                sudo cp -r Zip-EBS-AWS/* /var/www/site2/
+                '''
+            }
+        }
+    }
+}
