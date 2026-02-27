@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 30px;
+}
+
+.car-section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+}
+
+.car-section img {
+    width: 70%;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 15px;
+}
