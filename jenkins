@@ -1,0 +1,9 @@
+Listen 8000
+
+<VirtualHost *:8000>
+    DocumentRoot /var/www/site2
+    <Directory /var/www/site2>
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
