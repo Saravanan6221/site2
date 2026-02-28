@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh '''
                 sudo rm -rf /var/www/site2/*
-                sudo cp -r Zip-EBS-AWS/* /var/www/site2/
+                sudo cp -r site2/* /var/www/site2/
                 '''
             }
         }
